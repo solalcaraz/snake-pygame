@@ -6,7 +6,7 @@ El clásico juego de la viborita, con obstáculos y dificultad progresiva, hecho
 
 Es el trabajo práctico que hice en 2023 para **Laboratorio de Computación II** (Tecnicatura en Programación Informática, UNSAM), junto con **Damián Palomba** y **Franco Medina**. La consigna pedía hacer un juego con Pygame para consolidar lo aprendido en Python. Para eso había que resolver un loop de juego en tiempo real, leer el teclado, detectar colisiones y pasar de una pantalla a otra (menú, partida y game over).
 
-En 2026 lo retomé para mi portfolio: ordené el código, corregí algunos bugs y lo documenté. Más abajo detallo qué es del TP original y qué agregué después.
+Luego se retomó ordenando el código, corrigiendo algunos bugs y documentándolo. Más abajo detallo qué es del TP original y qué se agregó después.
 
 ## Demo
 
@@ -64,7 +64,7 @@ El estado del TP tal como lo entregamos está marcado con el tag [`v1.0-tp-origi
 
 **TP original (2023, en equipo):** la mecánica del juego, los obstáculos, el menú inicial, la pantalla de game over con reintento y los sprites.
 
-**Mejoras (2026, individual):**
+**Mejoras posteriores (individual):**
 
 - Separé el código, que era un solo archivo, en módulos con responsabilidades claras, y moví las imágenes a `assets/`.
 - Saqué el código muerto (imports y constantes sin uso, un `print` de debug y una línea que nunca se ejecutaba) y unifiqué la lógica repetida: salir del juego, esperar una tecla y los `if` por cada dirección.
@@ -91,4 +91,3 @@ Verifiqué que el juego se comporta igual que antes: grabé una partida con tecl
 - Guardar el puntaje máximo entre partidas.
 - Agregar pausa y sonido.
 - Escribir tests para `logica.py`, que ya no depende de Pygame y es fácil de probar.
-- Usar una fuente incluida en el repo en vez de fuentes del sistema: Times New Roman y Arial pueden no estar en Linux, y ahí Pygame usa otra fuente.
